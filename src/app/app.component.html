@@ -57,4 +57,11 @@
   <button type="button" class="btn btn-primary" (click)="incrementarContador()">Sumar</button>
   <button type="button" class="btn btn-warning" (click)="decrementarContador()">Restar</button>
 </div>
+<p></p>
+<div>
+  <h4>Property Binding</h4>
+  <button type="button" class="btn btn-primary" [disabled]="!botonHabilitado">Guardar</button>
+<button type="button" class="btn btn-success" (click)="alternarBoton()">Habilitar/Deshabilitar botón</button>
+</div>
+<p></p>
 </div>

@@ -10,29 +10,30 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'fundamentos';
   //Propiedades
-  nombre = 'Leonardo';
-  email = 'correo.generico@utsjr.edu.mx';
-  aniosServicio = 22;
+  nombre = 'Leonardo Resendiz';
+  email = 'leonardo@utsjr.edu.mx';
+  aniosServicio = 15;
   activo = true;
   alumnos = [24, 25, 26];
   numero = 6;
   contador = 0;
+  botonHabilitado = false;
 
   productos = [
     {
       id: 1,
-      descripcion: 'Submarinos',
+      descripcion: 'Doritos',
       precio: 25
     },
     {
       id: 2,
-      descripcion: 'Choco Roles',
-      precio: 20.50
+      descripcion: 'Gatorade',
+      precio: 32.50
     },
     {
       id: 3,
-      descripcion: 'Rufles de queso',
-      precio: 18
+      descripcion: 'Snickers',
+      precio: 17
     },
   ];
 
@@ -61,4 +62,9 @@ incrementarContador(){
 decrementarContador(){
   this.contador--;
 }
+
+alternarBoton(){
+  this.botonHabilitado = !this.botonHabilitado;
+}
+
 }
