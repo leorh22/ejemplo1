@@ -66,5 +66,5 @@ decrementarContador(){
 alternarBoton(){
   this.botonHabilitado = !this.botonHabilitado;
 }
-
+//comentario
 }
